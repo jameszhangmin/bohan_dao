@@ -1,0 +1,11 @@
+#Ignore all dotfiles...
+.*
+#except for .gitignore
+!.gitignore
+
+#Ignore Play! working directory#
+**/target/**
+**/**/target/**
+**/tmp/**
+*.iml
+*.eml
