@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bohan.bohan_dao.mapper.MawbhawbMapperR">
+  
+  <resultMap type="Mawbhawb" id="mawbhawb">
+  	<id property="hawb" column="hawb"/>
+  	<result property="mawb" column="mawb"/>
+  	<result property="jjDate" column="JJDate"/>
+  	<result property="inDate" column="indate"/>
+  	<result property="weightGross" column="weightgross"/>
+  	<result property="weight" column="weight"/>
+  	<result property="pieceShould" column="pieceshould"/>
+  	<result property="piece" column="piece"/>
+  	<result property="status" column="status"/>
+  </resultMap>
+  
+  <select id="getMawbhawbByHawb" parameterType="String" resultMap="mawbhawb">
+    SELECT * FROM dbo.View_mawbhawb WHERE hawb=#{value}
+  </select>
+  
+  
+</mapper>

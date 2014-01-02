@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+ 
+<configuration>
+  <properties resource="mysql-config/config.properties"></properties>
+  
+  <settings>
+    <setting name="logImpl" value="${logImpl}"/>
+  </settings>
+  
+  
+  <typeAliases>
+	<typeAlias type="com.bohan.bohan_dao.domain.Mawbhawb" alias="Mawbhawb" />
+  </typeAliases>
+ 
+  <environments default="${environment}">
+	<environment id="local">
+	  <transactionManager type="${transactionManager_type}"/>
+	  <dataSource type="${datasource_type}">
+		<property name="driver" value="${driver}" />
+		<property name="url" value="${db_bh_erp_r-url-local}" />       
+		<property name="username" value="${db_bh_erp_r-username-local}" />
+		<property name="password" value="${db_bh_erp_r-password-local}" />
+	  </dataSource>
+	</environment>
+	<environment id="development">
+	  <transactionManager type="${transactionManager_type}"/>
+	  <dataSource type="${datasource_type}">
+		<property name="driver" value="${driver}" />
+		<property name="url" value="${db_bh_erp_r-url-development}" />       
+		<property name="username" value="${db_bh_erp_r-username-development}" />
+		<property name="password" value="${db_bh_erp_r-password-development}" />
+	  </dataSource>
+	</environment>
+	<environment id="production">
+	  <transactionManager type="${transactionManager_type}"/>
+	  <dataSource type="${datasource_type}">
+		<property name="driver" value="${driver}" />
+		<property name="url" value="${db_bh_erp_r-url-production}" />       
+		<property name="username" value="${db_bh_erp_r-username-production}" />
+		<property name="password" value="${db_bh_erp_r-password-production}" />
+	  </dataSource>
+	</environment>
+  </environments>
+ 
+ 
+  <mappers>
+  	<mapper resource="com/bohan/bohan_dao/mapper/MawbhawbMapperR.xml" />
+  </mappers>
+ 
+</configuration>
