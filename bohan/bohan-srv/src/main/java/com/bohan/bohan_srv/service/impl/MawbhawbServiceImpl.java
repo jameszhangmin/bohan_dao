@@ -1,5 +1,7 @@
 package com.bohan.bohan_srv.service.impl;
 
+import java.util.List;
+
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.log4j.Logger;
@@ -23,6 +25,11 @@ public class MawbhawbServiceImpl implements MawbhawbService {
 	public Mawbhawb getMawbhawbByHawb(String hawb) {
 		SqlSession sqlSession = sqlSessionFactory_bohan_R.openSession();
 		return mawbhawbDaoR.getMawbhawbByHawb(sqlSession, hawb);
+	}
+
+	public List<Mawbhawb> getMawbhawbByQuery(List<String> keywordList) {
+		SqlSession sqlSession = sqlSessionFactory_bohan_R.openSession();
+		return mawbhawbDaoR.getMawbhawbByQuery(sqlSession, keywordList);
 	}
 
 }

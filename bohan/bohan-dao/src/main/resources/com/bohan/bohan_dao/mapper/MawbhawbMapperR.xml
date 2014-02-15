@@ -20,5 +20,14 @@
     SELECT * FROM dbo.View_mawbhawb WHERE hawb=#{value}
   </select>
   
+  <select id="getMawbhawbByQuery" parameterType="map" resultMap="mawbhawb">
+    SELECT *
+    FROM dbo.View_mawbhawb
+    WHERE hawb in
+     <foreach collection="keywordList" item="keyword" open="(" separator="," close=")">
+	    	#{keyword}
+	 </foreach>
+  </select>
+  
   
 </mapper>
