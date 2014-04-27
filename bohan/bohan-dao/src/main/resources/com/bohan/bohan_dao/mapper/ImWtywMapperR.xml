@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bohan.bohan_dao.mapper.ImWtywMapperR">
+  
+  <resultMap type="ImWtyw" id="imWtyw">
+  	<id property="id" column="id"/>
+  	<result property="tcid" column="TCID"/>
+  	<result property="dzdq" column="dzdq"/>
+  	<result property="wtbg" column="wtbg"/>
+  </resultMap>
+  
+  <select id="getImWtywByTCID" parameterType="String" resultMap="imWtyw">
+    SELECT * FROM dbo.IM_Wtyw WHERE TCID=#{value}
+  </select>
+    
+</mapper>

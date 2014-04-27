@@ -24,7 +24,7 @@ public class MawbhawbServiceTest {
 	
 	@Test
 	public void test() {
-		String hawb = "00005655";
+		String hawb = "3051040075";
 		Mawbhawb mawbhawb = mawbhawbService.getMawbhawbByHawb(hawb);
 		Assert.assertFalse(mawbhawb.equals(null));
 	}

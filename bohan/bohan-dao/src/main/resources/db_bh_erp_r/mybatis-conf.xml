@@ -13,6 +13,7 @@
   
   <typeAliases>
 	<typeAlias type="com.bohan.bohan_dao.domain.Mawbhawb" alias="Mawbhawb" />
+	<typeAlias type="com.bohan.bohan_dao.domain.ImWtyw" alias="ImWtyw" />
   </typeAliases>
  
   <environments default="${environment}">
@@ -48,6 +49,7 @@
  
   <mappers>
   	<mapper resource="com/bohan/bohan_dao/mapper/MawbhawbMapperR.xml" />
+  	<mapper resource="com/bohan/bohan_dao/mapper/ImWtywMapperR.xml" />
   </mappers>
  
 </configuration>

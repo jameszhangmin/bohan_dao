@@ -14,6 +14,8 @@
   	<result property="pieceShould" column="pieceshould"/>
   	<result property="piece" column="piece"/>
   	<result property="status" column="status"/>
+  	<association property="imWtyw" column="TCID"
+			select="com.bohan.bohan_dao.mapper.ImWtywMapperR.getImWtywByTCID" />
   </resultMap>
   
   <select id="getMawbhawbByHawb" parameterType="String" resultMap="mawbhawb">

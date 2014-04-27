@@ -11,5 +11,6 @@
 	
 	<!-- bh -->
 	<bean id="mawbhawbDaoR" class="com.bohan.bohan_dao.dao.MawbhawbDaoRImpl" />
+	<bean id="imWtywDaoR" class="com.bohan.bohan_dao.dao.ImWtywDaoRImpl" />
 	
 </beans>

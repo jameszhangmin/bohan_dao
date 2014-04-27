@@ -54,6 +54,8 @@ public class Mawbhawb {
 	/**货物状态*/
 	private String status;
 	
+	private ImWtyw imWtyw;
+	
 	public String getDhtz() {
 		return dhtz;
 	}
@@ -209,6 +211,12 @@ public class Mawbhawb {
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+	public ImWtyw getImWtyw() {
+		return imWtyw;
+	}
+	public void setImWtyw(ImWtyw imWtyw) {
+		this.imWtyw = imWtyw;
 	}
 	
 }
