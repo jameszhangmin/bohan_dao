@@ -54,6 +54,20 @@ public class Mawbhawb {
 	/**货物状态*/
 	private String status;
 	
+	private String dzfx;
+	
+	private String bgfx;
+	
+	private String kkgj;
+	
+	private String dcfx;
+	
+	private String sjlf;
+	
+	private String kbfx;
+	
+	private String EMS_dh;
+	
 	private ImWtyw imWtyw;
 	
 	public String getDhtz() {
@@ -217,6 +231,48 @@ public class Mawbhawb {
 	}
 	public void setImWtyw(ImWtyw imWtyw) {
 		this.imWtyw = imWtyw;
+	}
+	public String getDzfx() {
+		return dzfx;
+	}
+	public String getBgfx() {
+		return bgfx;
+	}
+	public String getKkgj() {
+		return kkgj;
+	}
+	public String getDcfx() {
+		return dcfx;
+	}
+	public String getSjlf() {
+		return sjlf;
+	}
+	public String getKbfx() {
+		return kbfx;
+	}
+	public String getEMS_dh() {
+		return EMS_dh;
+	}
+	public void setDzfx(String dzfx) {
+		this.dzfx = dzfx;
+	}
+	public void setBgfx(String bgfx) {
+		this.bgfx = bgfx;
+	}
+	public void setKkgj(String kkgj) {
+		this.kkgj = kkgj;
+	}
+	public void setDcfx(String dcfx) {
+		this.dcfx = dcfx;
+	}
+	public void setSjlf(String sjlf) {
+		this.sjlf = sjlf;
+	}
+	public void setKbfx(String kbfx) {
+		this.kbfx = kbfx;
+	}
+	public void setEMS_dh(String eMS_dh) {
+		EMS_dh = eMS_dh;
 	}
 	
 }
